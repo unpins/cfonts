@@ -18,7 +18,6 @@
     },
     "root": {
       "inputs": {
-        "rust-overlay": "rust-overlay",
         "unpins-lib": "unpins-lib"
       }
     },
@@ -30,11 +29,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1781061510,
-        "narHash": "sha256-tVuGHgt/TsWu1rUAqEL+eWRIJJHtiPE2+yQ63b+/WTU=",
+        "lastModified": 1790321428,
+        "narHash": "sha256-JQBGEZDY6up5yu0ehQeDDnjvsw7MP8d4AlaBd9RxZVI=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "d286e9691bb03045febbf8304a658eab1487d1b5",
+        "rev": "84fb3c79e477d5e7ec4eff9c24dbc5d5c99b0fd1",
         "type": "github"
       },
       "original": {
@@ -45,14 +44,15 @@
     },
     "unpins-lib": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1790286370,
-        "narHash": "sha256-RKvHprVb8CAoaIKmcpGq9Fl2lLhadPrMCvZ+m9GHXRI=",
+        "lastModified": 1790366947,
+        "narHash": "sha256-x5Nd6As/kwnjN6bsodiW8HdONxa5slfnuPFbZv8iHu4=",
         "owner": "unpins",
         "repo": "nix-lib",
-        "rev": "9abc7c2433cdcd1ba20a4c0b832476aeca48c205",
+        "rev": "1874d7b0910f7418975a34bc1cfc883ef72cf370",
         "type": "github"
       },
       "original": {
