@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.3.0-2] - 2026-09-26
+
 ### Added
 
 - The README warns that cfonts reads standard input whenever it is not a
