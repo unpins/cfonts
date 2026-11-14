@@ -6,8 +6,9 @@
     extra-trusted-public-keys = [ "unpins.cachix.org-1:DDaShjbZ8VvcqxeTcAU3kV9vxZQBlyb7V/uLBHfTynI=" ];
   };
 
-  # mkRustCrate brings the rustc with it (nix-lib's rust-overlay pin), so the
-  # catalog's Rust binaries all come off the same toolchain.
+  # nix-lib pins rust-overlay; mkRustCrate uses its rustc only for the musl
+  # crosses (i686/armv7l/ppc64le/riscv64). Native, darwin and windows build
+  # with nixpkgs' rustc.
   inputs.unpins-lib.url = "github:unpins/nix-lib";
 
   # Pure-Rust crate (fonts embedded by upstream — no runtime data, no C deps):
