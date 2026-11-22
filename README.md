@@ -49,4 +49,3 @@ The [Releases](https://github.com/unpins/cfonts/releases) page has standalone bi
 - Upstream ships no man page, so none is embedded.
 - **Windows:** built with mingw-w64.
 - **Calling it from a script:** cfonts reads standard input whenever it isn't a terminal, even when you give the text on the command line and it throws that input away. Inside a `while read ... done < file` loop it therefore swallows the rest of the file and the loop ends after one round, silently. Redirect its input (`cfonts "hi" < /dev/null`) when you call it from a script. This is how upstream cfonts behaves everywhere, not something this build introduces.
-- No upstream features are disabled; no platforms are excluded.
